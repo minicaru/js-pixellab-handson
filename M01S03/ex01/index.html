@@ -10,13 +10,17 @@
       var object = {
         name: 'Alex', 
         surname: 'Minicaru', 
-        age: 33
+        age: 33,
+        petOwner: true,
+        carOwner: true
       };
 
       console.log(object);
       console.log(object.name);
       console.log('Ma numesc ' + object.name + ' ' + object.surname + ' si am ' + object.age + ' ' + 'ani.');
-      console.log(2020 - (object.age / 2));
+      console.log(Math.floor (2020 - (object.age / 2)));
+      console.log(object.name + ' ' + object.surname + ' are ' + object.age + ' ani.');
+      console.log(2020 - object.age);
     </script>
   </body>
 </html>
