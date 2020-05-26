@@ -1,2 +1,2 @@
-alert('Am oprit executia scripturilor');
-console.log('S-a reluat executia');
+alert('Am oprit executia');
+console.log('Am reluat executia');
