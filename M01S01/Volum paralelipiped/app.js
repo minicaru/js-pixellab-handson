@@ -1,8 +1,8 @@
-var inputLength = document.getElementById('length'),
-  inputWidth = document.getElementById('width'),
-  inputHeight = document.getElementById('height'),
-  elementResult = document.getElementById('result'),
-  form = document.querySelector('form');
+var inputLength = document.getElementById('length');
+var inputWidth = document.getElementById('width');
+var inputHeight = document.getElementById('height');
+var elementResult = document.getElementById('result');
+var form = document.querySelector('form');
 
 form.addEventListener('submit', function(e) {
   var length = inputLength.value || 0,
