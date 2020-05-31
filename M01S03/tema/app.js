@@ -30,4 +30,5 @@ console.log('Am acelasi email din copilarie: ' + person.email);
 console.warn('Afiseaza propozitia: “Unul din cele x animale ale mele este species si are age ani.”');
 console.log('Unul din cele ' + person.pets.length + ' animale ale mele este ' + person.pets[0].species + ' si are ' + person.pets[0].age + ' ani.')
 
-console.log(2020 - person.pets[1].age);
+console.warn('Calculeaza si afiseaza (folosind anul curent) anul de nastere al animalului de pe pozitia 2.');
+console.log(2020 - person.pets[2].age);
