@@ -32,3 +32,13 @@ console.log('Unul din cele ' + person.pets.length + ' animale ale mele este ' + 
 
 console.warn('Calculeaza si afiseaza (folosind anul curent) anul de nastere al animalului de pe pozitia 2.');
 console.log(2020 - person.pets[2].age);
+
+var birthYear = '1987';
+var curentYear = '2020';
+var petsAge = '3';
+
+
+function myFunction(birthYear, curentYear, petsAge) {
+  return curentYear - birthYear - petsAge;
+}
+
