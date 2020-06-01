@@ -33,12 +33,38 @@ console.log('Unul din cele ' + person.pets.length + ' animale ale mele este ' + 
 console.warn('Calculeaza si afiseaza (folosind anul curent) anul de nastere al animalului de pe pozitia 2.');
 console.log(2020 - person.pets[2].age);
 
-var birthYear = '1987';
-var curentYear = '2020';
-var petsAge = '3';
+console.warn('Calculeaza si afiseaza (folosind anul curent) anul de nastere al animalului de pe pozitia 2.(varianta 2)');
+var CurrentYear = new Date().getFullYear();
+console.log(CurrentYear - person.pets[2].age);
+
+console.warn('Calculeaza si salveaza in variabila "difference" diferenta de ani dintre persoana si animalul de pe pozitia 0. Foloseste anul curent.');
+var CurrentYear = new Date().getFullYear();
+var difference = CurrentYear - person.birthYear - person.pets[0].age;
+console.log(difference);
+
+console.warn('Salveaza numele animalului de pe pozitia 0 intr-o variabila numita petName.');
+var petName = person.pets[0].name;
+console.log(petName);
+
+console.warn('Afiseaza propozitia: Intre firstName si petName este o diferenta de "difference" ani');
+console.log('Intre ' + person.firstName + ' si ' + petName + ' este o diferenta de ' + difference + ' ani.');
 
 
-function myFunction(birthYear, curentYear, petsAge) {
-  return curentYear - birthYear - petsAge;
-}
+document.getElementById('prop01').innerHTML = person.firstName + ', ' + 
+   person.pets[0].name + ', ' + 
+   person.pets[1].name + ', ' + 
+   person.pets[2].name + ' locuiesc toti in aceeasi casa.';
 
+document.getElementById('prop02').innerHTML = person.pets[0].age - person.pets[2].age;
+
+document.getElementById('prop03').innerHTML = 'Ma numesc ' + person.firstName + ' ' + 
+   person.lastName + ', m-am nascut in ' + 
+   person.birthYear + ' si codul meu postal este ' + 
+   person.zipCode + '.';
+   
+document.getElementById('prop04').innerHTML = 'Animalele mele s-au nascut in ' + 
+   (CurrentYear - person.pets[0].age) + ', ' + 
+   (CurrentYear - person.pets[1].age) + ', respectiv ' + 
+   (CurrentYear - person.pets[2].age);
+
+document.getElementById('prop05').innerHTML = 'Cu siguranta am gresit eu mai multe pe aici, astept cu nerabdare corectarea:D';
