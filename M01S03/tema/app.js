@@ -67,4 +67,4 @@ document.getElementById('prop04').innerHTML = 'Animalele mele s-au nascut in ' +
    (CurrentYear - person.pets[1].age) + ', respectiv ' + 
    (CurrentYear - person.pets[2].age);
 
-document.getElementById('prop05').innerHTML = 'Cu siguranta am gresit eu mai multe pe aici, astept cu nerabdare corectarea:D';
+document.getElementById('prop05').inner = 'Cu siguranta am gresit eu mai multe pe aici, astept cu nerabdare corectarea:D';
