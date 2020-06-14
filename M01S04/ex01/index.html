@@ -12,10 +12,10 @@
         var messageElement = document.getElementById('message');
         var message = '';
 
-        if (value % 2 === 0) {
-            message = 'Valoarea este para';
-        } else {
+        if (value % 2 === 1) {
             message = 'Valoarea este impara';
+        } else {
+            message = 'Valoarea este para';
         }
 
         messageElement.innerText = message;

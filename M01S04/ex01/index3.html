@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name</title>
+</head>
+<body>
+  <p id="message01"></p>
+  <p id="message02"></p>
+  <p id="message03"></p>
+
+  <script>
+    var userName = window.prompt('Care este numele tau?');
+    var messageElement01 = document.getElementById('message01');
+    var messageElement02 = document.getElementById('message02');
+    var messageElement03 = document.getElementById('message03');
+    var nameLength = userName.replace(/ /g, '').length; 
+
+    messageElement01.innerText = `Numele meu este ${userName}.`;
+    messageElement02.innerText = `Numele inclus are ${nameLength} caractere`;
+
+    var lastMassage = '';
+    
+    if (userName.includes('a') === true) {
+      lastMassage = 'Numele introdus contine litera a.';
+    } else {
+      lastMassage = 'Numele introdus nu contine litera a.';
+    }
+
+    messageElement03.innerText = lastMassage;
+  </script>
+</body>
+</html>
