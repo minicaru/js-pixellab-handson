@@ -75,4 +75,10 @@ friendsKeysNames.forEach(function(friendKey, i, friends){
 console.log(message);
 
 console.warn('Folosind bucla, afiseaza mai multe propozitii (cate una per console.log()) care sa afiseze: “Larry are xx ani. Steven are …”');
-var message = ' ';
+var message = '';
+Object.keys(person.friends).forEach(function (friendKey) {
+  var friend = person.friends[friendKey];
+  message = `${friend.name} are ${friend.age} ani `;
+
+  console.log(message);
+})
