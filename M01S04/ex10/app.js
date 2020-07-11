@@ -101,3 +101,43 @@ person.friends.forEach(function(friend){
 });
 
 console.log(totalYears);
+
+console.warn('Afiseaza diferenta de varsta dintre persoana si prietenii din arrayul friends daca aceasta este mai mare sau egala cu 2 ani.');
+
+person.friends.forEach(function(friend){
+  var ageDiff = person.age - friend.age;
+
+  if (ageDiff >= 2) {
+    console.log(ageDiff);
+  }
+});
+
+console.warn('Afiseaza fraza: "Intre Dragos si Larry este o diferenta de xx ani. Intre Dragos si Steven... "');
+message = '';
+
+person.friends.forEach(function(friend){
+  var ageDiff = person.age - friend.age;
+
+  message += `Intre ${person.name} si ${friend.name} este o diferenta de ${ageDiff} ani. `;
+});
+
+console.log(message.trim());
+
+console.warn('Folosind metoda reverse si apoi forEach, afiseaza in ordine inversa elementele arrayului skills.');
+message = '';
+person.skills.reverse();
+
+person.skills.forEach(function(skill, i, skills){
+  var punctuation = ', ';
+
+  message += skill;
+
+  if (i === skills.length - 1) {
+    punctuation = '.';
+  } 
+
+  message += punctuation;
+});
+
+console.log(message);
+person.skills.reverse();
